@@ -1,0 +1,29 @@
+
+
+section#timeline{
+    display: none;
+    font-size: 20px;
+    margin-top: 12%;
+    div.caption{
+        text-align: center;
+    }
+    div.row{
+        text-align: center;
+        margin-top: 20px;
+        div.col-xs-2{
+            img{
+                width: 70px;
+                height: 70px;
+                border-radius: 35px;
+            }
+            button{
+                float: center;
+            }
+        }
+        div.col-xs-1{
+            span{
+                cursor: pointer;
+            }
+        }
+    }
+}

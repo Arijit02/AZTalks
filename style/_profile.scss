@@ -1,0 +1,75 @@
+section#profile{
+    display: none;
+    margin-top: 10.3%;
+    div.display{
+        div#cp{
+            background-color: rgb(133, 216, 133);
+            box-shadow: 2px 2px 2px rgb(129, 101, 101);
+            width: 70%;
+            height: 300px;
+            cursor: pointer;
+            div#dp{
+                position: relative;
+                left: 10px;
+                bottom: -125px;
+                width: 150px;
+                height: 150px;
+                border-radius: 75px;
+                border: 10px solid white;
+                img{
+                    width: 130px;
+                    height: 130px;
+                    border-radius: 65px;
+                    cursor: pointer;
+                    box-shadow: 2px 2px 2px grey;
+                }
+                div.dropdown{
+                    position: relative;
+                    left: 110px;
+                    top: -30px;
+                    ul{
+                        top: 0px;
+                        left: 10px;
+                        form#image-form{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        div.action-bar{
+            width: 70%;
+            margin-top: 2px;
+            button{
+                border: none;
+                width: 16%;
+                height: 30px;
+                font-size: 15px;
+            }
+            box-shadow: 2px 2px 2px rgb(129, 101, 101);
+        }
+    }
+}
+
+div#snapshot{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    display: none;
+    img{
+        width: 32px;
+        position: relative;
+        left: 270px;
+        top: -100px;
+        cursor: pointer;
+    }
+    span.close{
+        opacity: 1;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 20px;
+    }
+}

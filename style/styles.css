@@ -1,0 +1,493 @@
+div.wrapper {
+  z-index: 0; }
+
+.navbar-fixed-top {
+  z-index: 1; }
+
+.navbar {
+  border-radius: 0px;
+  height: 90px; }
+  .navbar h1 {
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 5px;
+    color: #a6a6a6;
+    font-size: 35px;
+    outline: none; }
+  .navbar img {
+    width: 70px;
+    position: absolute;
+    left: 160px;
+    top: 8px; }
+  .navbar ul.nav.navbar-left {
+    background-color: #f2f2f2;
+    width: 100%;
+    font-size: large;
+    position: absolute;
+    left: 0px;
+    margin-top: 90px; }
+    @media screen and (max-width: 1150px) and (min-width: 1031px) {
+      .navbar ul.nav.navbar-left {
+        font-size: 15px; } }
+    @media screen and (max-width: 1030px) and (min-width: 0px) {
+      .navbar ul.nav.navbar-left {
+        font-size: 12px; } }
+    .navbar ul.nav.navbar-left a, .navbar ul.nav.navbar-left a:visited, .navbar ul.nav.navbar-left a:hover {
+      color: black;
+      outline: none; }
+    .navbar ul.nav.navbar-left a:hover {
+      opacity: 0.5; }
+    .navbar ul.nav.navbar-left li {
+      margin: 1px auto; }
+  .navbar ul.form.nav.navbar-right a, .navbar ul.form.nav.navbar-right a:hover {
+    text-decoration: none;
+    outline: none;
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    color: white; }
+  .navbar ul.form.nav.navbar-right p.message-login {
+    position: absolute;
+    top: 50px;
+    right: 355px;
+    color: white;
+    width: 33%;
+    text-align: center; }
+  .navbar ul.form.nav.navbar-right div#login {
+    position: absolute;
+    right: 0px;
+    top: 10px; }
+    .navbar ul.form.nav.navbar-right div#login input, .navbar ul.form.nav.navbar-right div#login button, .navbar ul.form.nav.navbar-right div#login p, .navbar ul.form.nav.navbar-right div#login a {
+      display: none; }
+    .navbar ul.form.nav.navbar-right div#login h6#user {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 100px;
+      cursor: pointer;
+      width: 50px; }
+  .navbar ul.form.nav.navbar-right button {
+    border-radius: 0; }
+  .navbar ul.form.nav.navbar-right button::-moz-focus-inner {
+    border: 0; }
+  .navbar ul.form.nav.navbar-right button#login, .navbar ul.form.nav.navbar-right #icons button {
+    height: 40px;
+    width: 70px;
+    color: black;
+    background-color: #f2f2f2;
+    border: 1px solid white; }
+  .navbar ul.form.nav.navbar-right button#signup, .navbar ul.form.nav.navbar-right button#logout {
+    height: 40px;
+    width: 75px;
+    color: #f2f2f2;
+    background-color: black;
+    border: 1px solid white; }
+    .navbar ul.form.nav.navbar-right button#signup a, .navbar ul.form.nav.navbar-right button#logout a {
+      color: #f2f2f2;
+      text-decoration: none; }
+  .navbar ul.icons.nav.navbar-right {
+    position: absolute;
+    background-color: #f2f2f2;
+    right: 15px;
+    top: 90px;
+    padding-top: 5px;
+    padding-bottom: 0px; }
+    .navbar ul.icons.nav.navbar-right #icons form {
+      display: none;
+      float: right; }
+    .navbar ul.icons.nav.navbar-right span#search {
+      float: right;
+      margin-top: 10px;
+      cursor: pointer;
+      color: black; }
+    .navbar ul.icons.nav.navbar-right button {
+      height: 40px;
+      width: 70px;
+      color: black;
+      background-color: #f2f2f2;
+      border: 1px solid black;
+      box-shadow: 2px 2px grey; }
+
+div#mobile-login {
+  font-family: bold;
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  display: none; }
+  div#mobile-login #user-mobile {
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 80px;
+    cursor: pointer;
+    width: 50px; }
+  @media screen and (min-width: 491px) {
+    div#mobile-login #login-mobile {
+      height: 35px;
+      width: 70px;
+      color: black;
+      background-color: #f2f2f2;
+      border: 1px solid black; }
+    div#mobile-login #logout-mobile, div#mobile-login #signup-mobile {
+      height: 35px;
+      width: 75px;
+      color: #f2f2f2;
+      background-color: black;
+      border: 1px solid white; } }
+  @media screen and (max-width: 490px) and (min-width: 410px) {
+    div#mobile-login {
+      font-size: 10px; }
+      div#mobile-login #login-mobile {
+        height: 30px;
+        width: 55px;
+        color: black;
+        background-color: #f2f2f2;
+        border: 1px solid black; }
+      div#mobile-login #logout-mobile, div#mobile-login #signup-mobile {
+        height: 30px;
+        width: 60px;
+        color: #f2f2f2;
+        background-color: black;
+        border: 1px solid white; } }
+  @media screen and (max-width: 410px) and (min-width: 381px) {
+    div#mobile-login {
+      font-size: 7px; }
+      div#mobile-login #login-mobile {
+        height: 25px;
+        width: 45px;
+        color: black;
+        background-color: #f2f2f2;
+        border: 1px solid black; }
+      div#mobile-login #logout-mobile, div#mobile-login #signup-mobile {
+        height: 25px;
+        width: 50px;
+        color: #f2f2f2;
+        background-color: black;
+        border: 1px solid white; } }
+  @media screen and (max-width: 380px) and (min-width: 0px) {
+    div#mobile-login {
+      font-size: 6px; }
+      div#mobile-login #login-mobile {
+        height: 20px;
+        width: 40px;
+        color: black;
+        background-color: #f2f2f2;
+        border: 1px solid black; }
+      div#mobile-login #logout-mobile, div#mobile-login #signup-mobile {
+        height: 20px;
+        width: 45px;
+        color: #f2f2f2;
+        background-color: black;
+        border: 1px solid white; } }
+
+div.mob-login {
+  width: 100%;
+  position: absolute;
+  top: 200px;
+  display: none;
+  z-index: 1; }
+
+article.mobile-form {
+  background-color: white;
+  padding: 20px;
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 250px;
+  box-shadow: 5px 5px 5px grey; }
+  article.mobile-form span.close {
+    cursor: pointer;
+    background-color: red;
+    box-shadow: 2px 2px 2px #bb2929;
+    color: white;
+    opacity: 1; }
+  article.mobile-form input {
+    box-shadow: 1px 1px 1px grey; }
+  article.mobile-form div.title {
+    font-size: 20px;
+    color: black; }
+  article.mobile-form p.message-login {
+    color: red; }
+
+@media screen and (max-width: 490px) and (min-width: 410px) {
+  .navbar h1 {
+    font-size: 30px; }
+  .navbar img {
+    width: 60px;
+    left: 140px; } }
+@media screen and (max-width: 410px) and (min-width: 381px) {
+  .navbar h1 {
+    font-size: 25px; }
+  .navbar img {
+    width: 50px;
+    left: 120px; } }
+@media screen and (max-width: 380px) and (min-width: 0px) {
+  .navbar h1 {
+    font-size: 20px; }
+  .navbar img {
+    width: 40px;
+    left: 100px; } }
+li.active a {
+  color: white !important;
+  background-color: #0d830d !important; }
+
+div#signup-form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  display: inline-block;
+  color: black;
+  text-align: center; }
+
+.signup button {
+  width: 180px;
+  height: 35px;
+  background-color: #29a329;
+  box-shadow: 3px 3px 3px #248f24;
+  color: white; }
+
+.signup button:hover {
+  opacity: 0.8; }
+
+button#signup a {
+  color: white; }
+
+div#form-signup {
+  color: red; }
+
+h6 {
+  color: red; }
+
+section#about {
+  display: none;
+  margin-top: 12%; }
+
+section#contact {
+  display: none;
+  margin-top: 12%; }
+
+section#timeline {
+  display: none;
+  font-size: 20px;
+  margin-top: 12%; }
+  section#timeline div.caption {
+    text-align: center; }
+  section#timeline div.row {
+    text-align: center;
+    margin-top: 20px; }
+    section#timeline div.row div.col-xs-2 img {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px; }
+    section#timeline div.row div.col-xs-2 button {
+      float: center; }
+    section#timeline div.row div.col-xs-1 span {
+      cursor: pointer; }
+
+section#follow_list {
+  display: none;
+  font-size: 20px;
+  margin-top: 12%; }
+  section#follow_list div.row {
+    width: 100%;
+    background-color: #918484; }
+  section#follow_list th {
+    text-align: center; }
+  section#follow_list td {
+    text-align: center; }
+
+section#profile {
+  display: none;
+  margin-top: 10.3%; }
+  section#profile div.display div#cp {
+    background-color: #85d885;
+    box-shadow: 2px 2px 2px #816565;
+    width: 70%;
+    height: 300px;
+    cursor: pointer; }
+    section#profile div.display div#cp div#dp {
+      position: relative;
+      left: 10px;
+      bottom: -125px;
+      width: 150px;
+      height: 150px;
+      border-radius: 75px;
+      border: 10px solid white; }
+      section#profile div.display div#cp div#dp img {
+        width: 130px;
+        height: 130px;
+        border-radius: 65px;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px grey; }
+      section#profile div.display div#cp div#dp div.dropdown {
+        position: relative;
+        left: 110px;
+        top: -30px; }
+        section#profile div.display div#cp div#dp div.dropdown ul {
+          top: 0px;
+          left: 10px; }
+          section#profile div.display div#cp div#dp div.dropdown ul form#image-form {
+            display: none; }
+  section#profile div.display div.action-bar {
+    width: 70%;
+    margin-top: 2px;
+    box-shadow: 2px 2px 2px #816565; }
+    section#profile div.display div.action-bar button {
+      border: none;
+      width: 16%;
+      height: 30px;
+      font-size: 15px; }
+
+div#snapshot {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  display: none; }
+  div#snapshot img {
+    width: 32px;
+    position: relative;
+    left: 270px;
+    top: -100px;
+    cursor: pointer; }
+  div#snapshot span.close {
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 20px; }
+
+.messenger {
+  position: absolute;
+  z-index: 2;
+  width: 300px;
+  height: 450px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  box-shadow: 1px 1px 1px grey;
+  display: none; }
+  .messenger .show-text {
+    height: 80%;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px; }
+    .messenger .show-text span {
+      color: white;
+      opacity: 1;
+      cursor: pointer; }
+    .messenger .show-text .name {
+      background-color: #503636;
+      border-radius: 5px 5px 0px 0px;
+      height: 10%;
+      color: white;
+      padding-left: 10px;
+      padding-top: 2.5px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .messenger .show-text .chats {
+      height: 90%;
+      overflow-y: scroll;
+      overflow-x: hidden; }
+      .messenger .show-text .chats p {
+        background-color: #ececa7;
+        border-radius: 10px;
+        width: max-content;
+        max-width: 300px;
+        overflow-wrap: break-word;
+        padding: 5px;
+        padding-right: 15px;
+        margin-left: 5px;
+        margin-top: 5px; }
+        .messenger .show-text .chats p i#date {
+          color: red;
+          font-size: 10px;
+          position: relative;
+          right: 0px;
+          bottom: 0px; }
+  .messenger .type-text {
+    height: 20%;
+    background-color: white; }
+    .messenger .type-text button {
+      position: absolute;
+      bottom: 50px;
+      right: 0px; }
+
+section#message {
+  display: none;
+  text-align: center;
+  margin-top: 12%; }
+  section#message .btn {
+    position: relative;
+    top: -5px; }
+  @media screen and (max-width: 1200px) and (min-width: 941px) {
+    section#message {
+      margin-top: 15%; } }
+  @media screen and (max-width: 940px) and (min-width: 531px) {
+    section#message {
+      margin-top: 18%; } }
+  @media screen and (max-width: 530px) and (min-width: 381px) {
+    section#message {
+      margin-top: 25%; } }
+  @media screen and (max-width: 380px) and (min-width: 0px) {
+    section#message {
+      margin-top: 30%; }
+      section#message button {
+        width: 50px;
+        height: 30px;
+        font-size: 8px; } }
+  section#message th {
+    text-align: center; }
+  section#message .offline {
+    background-color: red; }
+  section#message .online {
+    background-color: green; }
+  section#message span {
+    color: white;
+    padding: 5px;
+    border-radius: 2px; }
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black; }
+  body a, body a:hover {
+    text-decoration: none; }
+
+input {
+  height: 40px;
+  width: 180px;
+  box-shadow: 2px 2px #808080;
+  color: black; }
+
+div.index {
+  width: 100%;
+  overflow-x: hidden; }
+
+section#home {
+  margin-top: 10%;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif; }
+
+.index-intro {
+  padding-top: 10px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7; }
+
+.index-intro .container .jumbotron {
+  border-radius: 0px;
+  background-image: url("../images/jumbotron.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .index-intro .container .jumbotron a {
+    color: black; }
+
+#home div.row {
+  padding-top: 50px; }
+  #home div.row img {
+    height: 180px; }
+
+/*# sourceMappingURL=styles.css.map */

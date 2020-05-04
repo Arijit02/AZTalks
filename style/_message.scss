@@ -1,0 +1,111 @@
+//Variables
+$width-messenger: 300px;
+$height-messenger: 450px;
+
+.messenger{
+    position: absolute;
+    z-index: 2;
+    width: $width-messenger;
+    height: $height-messenger;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    box-shadow: 1px 1px 1px grey;
+    display: none;
+    .show-text{
+        height: 80%;
+        background-color: white;
+        border-radius: 5px 5px 0px 0px;
+        span{
+            color: white;
+            opacity: 1;
+            cursor: pointer;
+        }
+        .name{
+            background-color: rgb(80, 54, 54);
+            border-radius: 5px 5px 0px 0px;
+            height: 10%;
+            color: white;
+            padding-left: 10px;
+            padding-top: 2.5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .chats{
+            height: 90%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            p{
+                background-color: rgb(236, 236, 167);
+                border-radius: 10px;
+                width: max-content;
+                max-width: $width-messenger;
+                //word-wrap: break-word;
+                overflow-wrap: break-word;
+                padding: 5px;
+                padding-right: 15px;
+                margin-left: 5px;
+                margin-top: 5px;
+                i#date{
+                    color: red;
+                    font-size: 10px;
+                    position: relative;
+                    right: 0px;
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+    .type-text{
+        height: 20%;
+        background-color: white;
+        button{
+            position: absolute;
+            bottom: 50px;
+            right: 0px;
+        }
+    }
+}
+
+section#message{
+    display: none;
+    text-align: center;
+    margin-top: 12%;
+    .btn{
+        position: relative;
+        top: -5px;
+    }
+    @media screen and(max-width: 1200px) and(min-width: 941px){
+        margin-top: 15%;
+    }
+    @media screen and(max-width: 940px) and(min-width: 531px){
+        margin-top: 18%;
+    }
+    @media screen and(max-width: 530px) and(min-width: 381px){
+        margin-top: 25%;
+    }
+    @media screen and(max-width: 380px) and(min-width: 0px){
+        margin-top: 30%;
+        button{
+            width: 50px;
+            height: 30px;
+            font-size: 8px;
+        }
+    }
+    th{
+        text-align: center;
+    }
+    .offline{
+        background-color: red;
+    }
+    .online{
+        background-color: green;
+    }
+    span{
+        color: white;
+        padding: 5px;
+        border-radius: 2px;
+    }
+}
+

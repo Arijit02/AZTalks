@@ -1,0 +1,29 @@
+
+div#signup-form{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    display: inline-block;
+    color: black;
+    text-align: center;
+}
+.signup button{
+    width: 180px;
+    height: 35px; 
+    background-color: #29a329;
+    box-shadow: 3px 3px 3px #248f24;
+    color: white
+}
+.signup button:hover{
+    opacity: 0.8;
+}
+button#signup a{
+    color: white;
+}
+div#form-signup{
+    color: red;
+}
+h6{
+    color: red;
+}

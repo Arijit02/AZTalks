@@ -1,0 +1,68 @@
+//Variables
+$bg-color: #f2f2f2; 
+$text-color: black;
+$font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+//Imports
+@import "_header";
+@import "_signup";
+@import "_about";
+@import "_contact";
+@import "_timeline";
+@import "_follow";
+@import "_profile";
+@import "_message";
+
+
+body{
+    background-color: $bg-color;
+    font-family: $font-body;
+    color: $text-color;
+    a, a:hover{
+        text-decoration: none;
+    }
+}
+input{
+    height: 40px;
+    width: 180px;
+    box-shadow: 2px 2px #808080;
+    color: black;
+}
+div.index{
+    width: 100%;
+    overflow-x: hidden;
+}
+section#home{
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.index-intro{
+    padding-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+.index-intro{
+    .container{
+        .jumbotron{
+            border-radius: 0px;
+            background-image: url('../images/jumbotron.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            a{
+                color: black;
+            }
+        }
+    }
+}
+#home{
+    div.row{
+        padding-top: 50px;
+        img{
+            height: 180px;
+        }
+    }
+}

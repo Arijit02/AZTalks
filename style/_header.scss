@@ -1,0 +1,272 @@
+//Variables
+$navbar-height: 90px;
+$font-title: 'Courier New', Courier, monospace;
+$title-margin-top: 5px;
+$title-color: #a6a6a6;
+$title-size: 35px;
+$img-logo-width: 70px;
+$img-logo-position-left: 160px;
+$img-logo-position-top: 8px;
+$nav-ul-margin-top: 90px;
+$body-text-color: black;
+$header-text-color: white;
+
+@mixin button( 
+    $height: 40px,
+    $width: 75px,
+    $color: #f2f2f2,
+    $background-color: black,
+    $border: 1px solid white){
+        height: $height;
+        width: $width;
+        color: $color;
+        background-color: $background-color;
+        border: $border;
+    }
+
+@mixin username($top: 10px, $right: 100px){
+    color: white;
+    position: absolute;
+    top: $top;
+    right: $right;
+    cursor: pointer;
+    width: 50px;
+}
+
+div.wrapper{
+    z-index: 0;
+}
+
+.navbar-fixed-top{
+    z-index: 1;
+}
+
+.navbar{
+    border-radius: 0px;
+    height: $navbar-height;
+    h1{
+        font-family: $font-title;
+        margin-top: $title-margin-top;
+        color: $title-color;
+        font-size: $title-size;
+        outline: none;
+    }
+    img{
+        width: $img-logo-width;
+        position: absolute;
+        left: $img-logo-position-left;
+        top: $img-logo-position-top;
+    }
+    ul.nav.navbar-left{
+        background-color: #f2f2f2;
+        width: 100%;
+        font-size: large;
+        @media screen and(max-width: 1150px ) and(min-width: 1031px){
+            font-size: 15px;
+        }
+        @media screen and(max-width: 1030px ) and(min-width: 0px){
+            font-size: 12px;
+        }
+        position: absolute;
+        left: 0px;
+        margin-top: $nav-ul-margin-top;
+        a, a:visited, a:hover{
+            color: $body-text-color;
+            outline: none;
+        }
+        a:hover{
+            opacity: 0.5;
+        }
+        li{
+            margin: 1px auto;
+        }
+    }
+    ul.form.nav.navbar-right{
+        a, a:hover{
+            text-decoration: none;
+            outline: none;
+            position: absolute;
+            top: 50px;
+            right: 200px;
+            color: white;
+        }
+        p.message-login{
+            position: absolute;
+            top: 50px;
+            right: 355px;
+            color: white;
+            width: 33%;
+            text-align: center;
+        }
+        div#login{
+            position:absolute;
+            right:0px;
+            top: 10px;
+            input, button, p, a{
+                display: none;
+            }
+            h6#user{
+                @include username();
+            }
+        }
+        button{
+            border-radius: 0;
+        }
+        button::-moz-focus-inner{
+            border: 0; 
+        } 
+        button#login, #icons button{
+            @include button(40px, 70px, black, #f2f2f2);
+        }
+        button#signup, button#logout{
+            @include button();
+            a{
+                color: #f2f2f2;  
+                text-decoration: none;
+            }
+        }
+    }
+    ul.icons.nav.navbar-right{
+        //display: none;
+        //width: 73%;
+        position: absolute;
+        background-color: #f2f2f2;
+        right: 15px;
+        top: 90px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        #icons form{
+            display: none;
+            float:right;
+        }
+        span#search{
+            float: right;
+            margin-top: 10px;
+            cursor: pointer;
+            color: black;
+        }
+        button{
+            @include button(40px, 70px, black, #f2f2f2, 1px solid black);
+            box-shadow: 2px 2px grey;
+        }
+    }
+}
+div#mobile-login{
+    #user-mobile{
+        @include username(0px, 80px);
+    }
+    font-family: bold;
+    @media screen and(min-width: 491px){
+        #login-mobile{
+            @include button(35px, 70px, black, #f2f2f2, 1px solid black);
+        }
+        #logout-mobile, #signup-mobile{
+            @include button(35px);
+        }
+    }
+    @media screen and(max-width: 490px) and(min-width: 410px){
+        font-size: 10px;
+        #login-mobile{
+            @include button(30px, 55px, black, #f2f2f2, 1px solid black);
+        }
+        #logout-mobile, #signup-mobile{
+            @include button(30px, 60px);
+        }
+    }
+    @media screen and(max-width: 410px) and(min-width: 381px){
+        font-size: 7px;
+        #login-mobile{
+            @include button(25px, 45px, black, #f2f2f2, 1px solid black);
+        }
+        #logout-mobile, #signup-mobile{
+            @include button(25px, 50px);
+        }
+    }
+    @media screen and(max-width: 380px) and(min-width: 0px){
+        font-size: 6px;
+        #login-mobile{
+            @include button(20px, 40px, black, #f2f2f2, 1px solid black);
+        }
+        #logout-mobile, #signup-mobile{
+            @include button(20px, 45px);
+        }   
+    }
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    display: none;
+}
+div.mob-login{
+    width: 100%;        
+    position: absolute;
+    top: 200px;
+    display: none;
+    z-index: 1;
+}
+article.mobile-form{
+    background-color: white; 
+    padding: 20px;
+    padding-top: 10px;
+    span.close{
+        cursor: pointer;
+        background-color: red;
+        box-shadow: 2px 2px 2px rgb(187, 41, 41);
+        color: white;
+        opacity: 1;
+    }
+    input{
+        box-shadow: 1px 1px 1px grey;
+    }
+    div.title{
+        font-size: 20px;
+        color: black;
+    }
+    p.message-login{
+        color: red;
+    }
+    margin: 0 auto;
+    width: 250px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+//media queries
+
+@media screen and(max-width: 490px) and(min-width: 410px){
+    .navbar{
+        h1{
+            font-size: $title-size - 5px;
+        }
+        img{
+            width: $img-logo-width - 10px;
+            left: $img-logo-position-left - 20px;
+        }
+    }
+}
+@media screen and(max-width: 410px) and(min-width: 381px){
+    .navbar{
+        h1{
+            font-size: $title-size - 10px;
+        }
+        img{
+            width: $img-logo-width - 20px;
+            left: $img-logo-position-left - 40px;
+        }
+    }
+}
+@media screen and(max-width: 380px) and(min-width: 0px){
+    .navbar{
+        h1{
+            font-size: $title-size - 15px;
+        }
+        img{
+            width: $img-logo-width - 30px;
+            left: $img-logo-position-left - 60px;
+        }
+    }
+}
+li.active{
+    a{
+        color: white !important;
+        background-color: rgb(13, 131, 13) !important
+    }
+}
